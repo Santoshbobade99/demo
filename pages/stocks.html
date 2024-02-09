@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market Terminology</title>
     <style>
-        body {
+        .main {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px 30px;
             background: #2b2626;
+            color: #fff;
         }
 
         h1 {
@@ -18,30 +19,113 @@
             color: #fff;
         }
 
-        h2 {
+        .main > h2 {
             color: #fff;
         }
-        strong{
+        .main > strong{
          color: #fff;
         }
-       li{
+        .main > li{
          color: #fff;
        }
-        p {
+       .main > p {
             margin-bottom: 20px;
             color: #fff;
         }
         @media (min-width:900px){
-         body{
+         .main{
             margin: 20px 150px;
          }
         }
+        *,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+a,
+svg,
+data,
+span,
+button,
+ion-icon { display: block; }
+img { height: auto; }
+button {
+background: none;
+border: none;
+font: inherit;
+cursor: pointer;
+}
+ion-icon { pointer-events: none; }
+address { font-style: normal; }
+table { border-collapse: collapse; }
+html {
+font-family: sans-serif;
+font-size: 10px;
+scroll-behavior: smooth;
+}
+body {
+background-color: #2b2626;
+color: #b1b5c3;
+font-size: 1.6rem;
+line-height: 1.4;
+}
+.footer-list,.social-list { list-style: none; }
+
+.footer-top {
+background-color: #2e2f33;
+padding-block: 80px 50px;
+}
+.footer-top .container {
+display: grid;
+grid-template-columns: repeat(2,4fr);
+margin: 30px 100px;
+gap: 50px;
+}
+@media (min-width:800px){
+   .footer-top .container {
+      grid-template-columns: repeat(4, 2fr);
+   }
+}
+.footer .logo { font-size: 3rem; }
+.footer-title {
+color:  #ffffff;
+font-size: 2.4rem;
+margin-block: 25px 20px;
+}
+.footer-contact-link:not(:last-child) { margin-block-end: 12px; }
+address.footer-contact-link { max-width: 30ch; }
+.footer-list-title {
+color: #fff;
+font-size: 1.4rem;
+font-weight:700;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+.footer-list > li:not(:last-child) { margin-block-end: 10px; }
+.footer-list > li:first-child { margin-block-end: 20px; }
+.footer-link {
+color:#fcfcfcbe;
+transition:  0.25s ease;
+}
+.footer-link:is(:hover, :focus) { color: #02bb0e; }
+.footer-bottom {
+background-color: #2b2626;
+padding-block: 20px;
+}
+
     </style>
 </head>
 
 <body>
     <h1>Stock Market Terminology</h1>
-
+    <div class="main">
     <h2>1. Stock/Share</h2>
     <p>A unit of ownership in a company.</p>
 
@@ -134,7 +218,188 @@
         </li>
     </ul>
 
+
     <p>Remember to conduct thorough research and consider your risk tolerance before making investment decisions.</p>
+</div>
+<footer class="footer">
+    <div class="footer-top" data-section>
+    <div class="container">
+    <div class="footer-brand">
+    <a href="/pages/about.html" class="logo">
+    <img src="/public/site_icon.png" width="40" height="50" alt="Cryptex logo">
+    Group
+    </a>
+    <h2 class="footer-title">Let's talk! 🤙</h2>
+    <a href="tel:+123456789101" class="footer-contact-link">+91 9876543210</a>
+    <a href="mailto:ssvcryptoexchange@gmail.com"
+    class="footer-contact-link">ssvcryptoexchange@gmail.com</a>
+    <address class="footer-contact-link">
+        Parbhani, Maharashtra , Bharat 431401
+    </address>
+    </div>
+    
+    <ul class="footer-list">
+    <li>
+    <p class="footer-list-title">Services</p>
+    </li>
+    
+    <li>
+        <a href="#" class="footer-link">Open an account</a>
+        </li> 
+    <li>
+    <a href="https://en.wikipedia.org/wiki/Currency" class="footer-link">Currency</a>
+    </li>
+    
+        <li>
+    <a href="/pages/stocks.html" class="footer-link">Stocks</a>
+    </li>
+    
+    <li>
+        <a href="/pages/mutualfunds.html" class="footer-link">Mutual Funds</a>
+        </li>
+    
+    <li>
+    <a href="/pages/future.html" class="footer-link">Future & Options</a>
+    </li>
+              
+    <li>
+    <a href="http://127.0.0.1:5500/pages/ipo.html" class="footer-link">IPOs</a>
+    </li>
+    
+    
+    </ul>
+    <ul class="footer-list">
+    <li>
+    <p class="footer-list-title">Support</p>
+    </li>
+    
+    <li>
+    <a href="http://127.0.0.1:5500/pages/helpcenter.html" class="footer-link">Help Center</a>
+    </li>
+    <li>
+    <a href="pages/feedback.html" class="footer-link">User Feedback</a>
+    </li>
+    
+    
+    <li>
+    <a href="#" class="footer-link">Trading Rules</a>
+    </li>
+    </ul>
+    <ul class="footer-list">
+    <li>
+    <p class="footer-list-title">Company</p>
+    </li>
+    <li>
+    <a href="http://127.0.0.1:5500/pages/about.html" class="footer-link" target="_blank" >About us</a>
+    </li>
+    <li>
+    <a href="http://127.0.0.1:5500/pages/about.html" class="footer-link" target="_blank">Career at </a>
+    </li>
+    
+    <li>
+    <a href="mailto:ssvcryptoexchange@gmail.com">Contact us</a>
+    </li>
+    
+    <li>
+    <a href="http://127.0.0.1:5500/pages/terms.html" class="footer-link">Terms & Condition</a>
+     </li>
+    
+    </ul>
+    </div>
+    
+    
+    
+    <ul class="footer-list">
+        <tr>
+        <td>
+      <h2>Most Popular Indices India</h2><br>
+        </td>
+        
+        <td>
+          | BSE SENSEX |
+        </td> 
+        
+        <td>
+            | BSE 100 |
+             </td>
+             
+             <td>
+                 | NIFTY 100 |
+             </td>
+      
+             <td>
+                | NIFTY 500 |
+                 </td>
+                 
+                 <td>
+                     | NIFTY 50 |
+                 </td>
+      
+                 <td>
+                   | NIFTY MIDCAP 100 |
+                     </td>
+                     
+                     <td>
+                       | NIFTY BANK |
+                     </td>
+    
+                     <td>
+                        | NIFTY NEXT 50 |
+                      </td>
+        </tr>
+        </ul><br><br>
+    
+    
+    
+      <div class="clock">
+      <div class="display">
+    </div>
+    </div>
+    
+    
+    
+      
+    <div class="footer-bottom">
+    <div class="container">
+        Created By SSV Group | All Rights Reserved.
+    </p>
+    <ul class="social-list">
+    <li>
+    <a href="#" class="social-link">
+    <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    </li>
+    <li>
+    <a href="#" class="social-link">
+    <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+    </li>
+    <li>
+    <a href="#" class="social-link">
+    <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    </li>
+    <li>
+    <a href="#" class="social-link">
+    <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+    </li>
+    
+    <li>
+        <a href="#" class="social-link">
+        <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        </li>
+    
+        <li>
+            <a href="#" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+            </a>
+            </li>
+    </ul>
+    </div>
+    </div>
+    </footer>
 </body>
 
 </html>

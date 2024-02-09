@@ -21,10 +21,7 @@
    --white_10: hsla(0, 0%, 100%, 0.1);
    --black_10: hsla(0, 0%, 0%, 0.1);
    --white: hsl(0, 0%, 100%);
-   /**
-   * gradient color
-   */
-   --gradient: linear-gradient(90deg, var(--white_10) 0px 77%, var(--white_50) 92%, transparent);
+
    /**
    * typography
    */
@@ -44,14 +41,7 @@
    */
    --section-padding: 100px;
    /**
-   * shadow
-   */
-   --shadow-1: 0px 4px 8px var(--black_10);
-   --shadow-2: 0px 30px 10px -20px var(--smocky-black_30);
-   --shadow-3: 0px 15px 10px -20px var(--smocky-black_30);
-   /**
-   * radius
-   */
+   
    --radius-12: 12px;
    --radius-24: 24px;
    /**
@@ -95,7 +85,7 @@
    address { font-style: normal; }
    table { border-collapse: collapse; }
    html {
-   font-family: var(--ff-dm-sans);
+   font-family: 'DM Sans', sans-serif;
    font-size: 10px;
    scroll-behavior: smooth;
    }
