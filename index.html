@@ -61,10 +61,10 @@ Group
 
 
 <li class="navbar-item">
-<a href="#" class="navbar-link" data-nav-link>Services</a>
+<a href="#footer-id" class="navbar-link" data-nav-link>Services</a>
 </li>
 <li class="navbar-item">
-<a href="#" class="navbar-link" data-nav-link>Help </a>
+<a href="/pages/helpcenter.html" class="navbar-link" data-nav-link>Help </a>
 </li>
 <li class="navbar-item">
     <a href="http://127.0.0.1:5500/pages/about.html" class="navbar-link" data-nav-link>About </a>   
@@ -348,15 +348,16 @@ Silver <span class="span">IND/USD</span>
 <div class="market-tab">
 <ul class="tab-nav">
 <li>
-<button class="tab-btn active">Currency</button>
+<button class="tab-btn active" id="btn_currency">Currency</button>
 </li>
 <li>
-<a href=""><button class="tab-btn">Equity</button></a>
+<button class="tab-btn" id="btn_equity">Equity</button>
 </li>
 <li>
-    <a href="/pages/ipo.html"><button class="tab-btn">IPO</button></a>
+<button class="tab-btn" id="btn_ipo">IPO</button>
 </li>
 </ul>
+<div id="Currency-1">
 <table class="market-table">
 <thead class="table-head">
 <tr class="table-row table-title">
@@ -556,6 +557,408 @@ class="chart">
 </tbody>
 </table>
 </div>
+<div id="equity-1"><table class="market-table">
+  <thead class="table-head">
+  <tr class="table-row table-title">
+  <th class="table-heading"></th>
+  <th class="table-heading" scope="col">#</th>
+  <th class="table-heading" scope="col">Name</th>
+  <th class="table-heading" scope="col">Last Price</th>
+  <th class="table-heading" scope="col">24h %</th>
+  <th class="table-heading" scope="col">Market Cap</th>
+  <th class="table-heading" scope="col">Last 7 Days</th>
+  <th class="table-heading"></th>
+  </tr>
+  </thead>
+  
+  <tbody class="table-body">
+  <tr class="table-row">
+  <td class="table-data">
+  <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+  <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+  <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+  </button>
+  </td>
+  
+  <th class="table-data rank" scope="row">1</th>
+  <td class="table-data">
+  <div class="wrapper">
+  <img src="/public/ethereum.jpg"width="20" height="20" alt="Ethereum logo"
+  class="img">
+  <h3>
+  <a href="#" class="coin-name"> <span class="span">ETH</span></a>
+  </h3>
+  </div>
+  </td>
+  <td class="table-data last-price">₹ 56,623.54</td>
+  <td class="table-data last-update green">+6.55%</td>
+  <td class="table-data market-cap">₹ 880,423,640,582</td>
+  <td class="table-data">
+  <img src="/public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+  class="chart">
+  </td>
+  <td class="table-data">
+  <button class="btn btn-outline">Trade</button>
+  </td>
+  </tr>
+  <tr class="table-row">
+  <td class="table-data">
+  <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+  <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+  <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+  </button>
+  </td>
+  
+  <th class="table-data rank" scope="row">2</th>
+  <td class="table-data">
+  <div class="wrapper">
+  <img src="/public/bitcoin.jpg" width="20" height="20" alt="Bitcoin logo"
+  class="img">
+  <h3>
+  <a href="pages/btc.html" class="coin-name">Bitcoin <span class="span">BTC</span></a>
+  </h3>
+  </div>
+  </td>
+  <td class="table-data last-price">₹ 56,623.54</td>
+  <td class="table-data last-update green">+1.49%</td>
+  <td class="table-data market-cap">₹ 880,423,640,582</td>
+  <td class="table-data">
+  <img src="/public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+  class="chart">
+  </td>
+  <td class="table-data">
+  <a href="btc.html"><button class="btn btn-outline">Trade</button></a>
+  </td>
+  </tr>
+  <tr class="table-row">
+  <td class="table-data">
+  <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+  <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+  <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+  </button>
+  </td>
+  
+  
+  
+  
+  
+  <th class="table-data rank" scope="row">3</th>
+  <td class="table-data">
+  <div class="wrapper">
+  <img src="public/tether.jpg" width="20" height="20" alt="Tether logo"
+  class="img">
+  <h3>
+  <a href="#" class="coin-name">Tether <span
+  class="span">USDT/USD</span></a>
+  </h3>
+  </div>
+  </td>
+  <td class="table-data last-price">₹ 56,623.54</td>
+  <td class="table-data last-update green">+1.46%</td>
+  <td class="table-data market-cap">₹ 880,423,640,582</td>
+  <td class="table-data">
+  <img src="public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+  class="chart">
+  </td>
+  <td class="table-data">
+  <button class="btn btn-outline">Trade</button>
+  </td>
+  </tr>
+  <tr class="table-row">
+  <td class="table-data">
+  <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+  <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+  <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+  </button>
+  </td>
+  
+  
+  
+  <th class="table-data rank" scope="row">4</th>
+  <td class="table-data">
+  <div class="wrapper">
+  <img src="public/solana.jpg" width="20" height="20" alt="Solana logo"
+  class="img">
+  <h3>
+  <a href="#" class="coin-name">Solana <span class="span">SOL</span></a>
+  </h3>
+  </div>
+  </td>
+  <td class="table-data last-price">₹ 56,623.54</td>
+  <td class="table-data last-update green">+1.45%</td>
+  <td class="table-data market-cap">₹ 880,423,640,582</td>
+  <td class="table-data">
+  <img src="public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+  class="chart">
+  </td>
+  <td class="table-data">
+  <button class="btn btn-outline">Trade</button>
+  </td>
+  </tr>
+  <tr class="table-row">
+  <td class="table-data">
+  <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+  <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+  <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+  </button>
+  </td>
+  
+  <th class="table-data rank" scope="row">5</th>
+  <td class="table-data">
+  <div class="wrapper">
+  <img src="public/cardano.jpg" width="20" height="20" alt="Cardano logo"
+  class="img">
+  <h3>
+  <a href="#" class="coin-name">Cardano <span class="span">ADA</span></a>
+  </h3>
+  </div>
+  </td>
+  <td class="table-data last-price">₹ 56,623.54</td>
+  <td class="table-data last-update green">+1.08%</td>
+  <td class="table-data market-cap">₹ 880,423,640,582</td>
+  <td class="table-data">
+  <img src="public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+  class="chart">
+  </td>
+  <td class="table-data">
+  <button class="btn btn-outline">Trade</button>
+  </td>
+  </tr>
+  <tr class="table-row">
+  <td class="table-data">
+  <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+  <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+  <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+  </button>
+  </td>
+  <th class="table-data rank" scope="row">6</th>
+  <td class="table-data">
+  <div class="wrapper">
+  <img src="public/avalanche.jpg" width="20" height="20" alt="Avalanche
+  logo" class="img">
+  <h3>
+  <a href="#" class="coin-name">Avalanche <span
+  class="span">AVAX</span></a>
+  </h3>
+  </div>
+  </td>
+  <td class="table-data last-price">₹ 56,623.54</td>
+  <td class="table-data last-update green">+0.51%</td>
+  <td class="table-data market-cap">₹ 880,423,640,582</td>
+  <td class="table-data">
+  <img src="public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+  class="chart">
+  </td>
+  <td class="table-data">
+  <button class="btn btn-outline">Trade</button>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+
+
+<div id="ipo-1">
+  <table class="market-table">
+    <thead class="table-head">
+    <tr class="table-row table-title">
+    <th class="table-heading"></th>
+    <th class="table-heading" scope="col">#</th>
+    <th class="table-heading" scope="col">Name</th>
+    <th class="table-heading" scope="col">Last Price</th>
+    <th class="table-heading" scope="col">24h %</th>
+    <th class="table-heading" scope="col">Market Cap</th>
+    <th class="table-heading" scope="col">Last 7 Days</th>
+    <th class="table-heading"></th>
+    </tr>
+    </thead>
+    
+    <tbody class="table-body">
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    
+    <th class="table-data rank" scope="row">1</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="/public/ethereum.jpg"width="20" height="20" alt="Ethereum logo"
+    class="img">
+    <h3>
+    <a href="#" class="coin-name">Ethereum <span class="span">ETH</span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 56,623.54</td>
+    <td class="table-data last-update green">+6.55%</td>
+    <td class="table-data market-cap">₹ 880,423,640,582</td>
+    <td class="table-data">
+    <img src="/public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <button class="btn btn-outline">Trade</button>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    
+    <th class="table-data rank" scope="row">2</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="/public/bitcoin.jpg" width="20" height="20" alt="Bitcoin logo"
+    class="img">
+    <h3>
+    <a href="pages/btc.html" class="coin-name"> <span class="span">BTC</span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 56,623.54</td>
+    <td class="table-data last-update green">+1.49%</td>
+    <td class="table-data market-cap">₹ 880,423,640,582</td>
+    <td class="table-data">
+    <img src="/public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <a href="btc.html"><button class="btn btn-outline">Trade</button></a>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    
+    
+    
+    
+    
+    <th class="table-data rank" scope="row">3</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="public/tether.jpg" width="20" height="20" alt="Tether logo"
+    class="img">
+    <h3>
+    <a href="#" class="coin-name">Tether <span
+    class="span">USDT/USD</span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 56,623.54</td>
+    <td class="table-data last-update green">+1.46%</td>
+    <td class="table-data market-cap">₹ 880,423,640,582</td>
+    <td class="table-data">
+    <img src="public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <button class="btn btn-outline">Trade</button>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    
+    
+    
+    <th class="table-data rank" scope="row">4</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="public/solana.jpg" width="20" height="20" alt="Solana logo"
+    class="img">
+    <h3>
+    <a href="#" class="coin-name">Solana <span class="span">SOL</span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 56,623.54</td>
+    <td class="table-data last-update green">+1.45%</td>
+    <td class="table-data market-cap">₹ 880,423,640,582</td>
+    <td class="table-data">
+    <img src="public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <button class="btn btn-outline">Trade</button>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    
+    <th class="table-data rank" scope="row">5</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="public/cardano.jpg" width="20" height="20" alt="Cardano logo"
+    class="img">
+    <h3>
+    <a href="#" class="coin-name">Cardano <span class="span">ADA</span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 56,623.54</td>
+    <td class="table-data last-update green">+1.08%</td>
+    <td class="table-data market-cap">₹ 880,423,640,582</td>
+    <td class="table-data">
+    <img src="public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <button class="btn btn-outline">Trade</button>
+    </td>
+    </tr>
+    <tr class="table-row">
+    <td class="table-data">
+    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+    <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+    </button>
+    </td>
+    <th class="table-data rank" scope="row">6</th>
+    <td class="table-data">
+    <div class="wrapper">
+    <img src="public/avalanche.jpg" width="20" height="20" alt="Avalanche
+    logo" class="img">
+    <h3>
+    <a href="#" class="coin-name">Avalanche <span
+    class="span">AVAX</span></a>
+    </h3>
+    </div>
+    </td>
+    <td class="table-data last-price">₹ 56,623.54</td>
+    <td class="table-data last-update green">+0.51%</td>
+    <td class="table-data market-cap">₹ 880,423,640,582</td>
+    <td class="table-data">
+    <img src="public/gain_graph.jpg" width="100" height="40" alt="profit chart"
+    class="chart">
+    </td>
+    <td class="table-data">
+    <button class="btn btn-outline">Trade</button>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+</div>
+</div>
 </div>
 </section>
 <!--
@@ -582,6 +985,7 @@ Click on the Registration button
 <div class="instruction-card">
 <h3 class="h3 card-title">Step 2</h3>
 <p class="card-text"> 
+  Create your Account
 </p>
 </div>
 </li>
@@ -592,7 +996,7 @@ Click on the Registration button
 <div class="instruction-card">
 <h3 class="h3 card-title">Step 3</h3>
 <p class="card-text">
-   
+ Click on crypto that you want to Buy  
 </p>
 </div>
 </li>
@@ -601,7 +1005,7 @@ Click on the Registration button
 <div class="instruction-card">
 <h3 class="h3 card-title">Step 4</h3>
 <p class="card-text">
-
+ Enter quantity that you want
 </p>
 </div>
 </li>
@@ -610,7 +1014,7 @@ Click on the Registration button
     <div class="instruction-card">
     <h3 class="h3 card-title">Step 5</h3>
     <p class="card-text">
-   
+    Click Buy & that's it
     </p>
     </div>
     </li>
@@ -726,7 +1130,7 @@ class="w-100">
 -->
 
 
-<footer class="footer">
+<footer class="footer" id="footer-id">
 <div class="footer-top" data-section>
 <div class="container">
 <div class="footer-brand">
@@ -998,7 +1402,36 @@ const addEventOnElem = function (elem, type, callback) {
     scrollReveal();
     addEventOnElem(window, "scroll", scrollReveal);
 
+   let Currency_1 = document.getElementById("Currency-1");
+   let equity_1 = document.getElementById("equity-1");
+   let ipo_1 = document.getElementById("ipo-1");
+   let btn_currency = document.getElementById("btn_currency");
+   let btn_equity = document.getElementById("btn_equity");
+   let btn_ipo = document.getElementById("btn_ipo");
+   
+   btn_currency.addEventListener('click',()=>{
+      Currency_1.style.display='block';
+      equity_1.style.display='none';
+      ipo_1.style.display='none';
+   });
 
+   btn_equity.addEventListener('click',()=>{
+      Currency_1.style.display='none';
+      equity_1.style.display='block';
+      ipo_1.style.display='none';
+      
+      btn_equity.classList.add("active");
+      
+      
+      
+      
+   });
+
+   btn_ipo.addEventListener('click',()=>{
+      Currency_1.style.display='none';
+      equity_1.style.display='none';
+      ipo_1.style.display='block';
+   });
 
     /**
     * chatbot

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>Page Title</title>
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   <script src='main.js'></script>
+   <style>
+      #main{
+         border: 2px solid black;
+         width:400px;
+         height: 400px;
+      }
+      #first-div{
+         background-color: aqua;
+         width:400px;
+         height: 400px; 
+      }
+      #second-div{
+         display: none;
+         background-color: palevioletred;
+         width:400px;
+         height: 400px;   
+      }
+   </style>
+</head>
+<body>
+   <div id="main">
+   <div id="first-div">this first div</div>
+   <div id="second-div">this second div</div>
+   </div>
+   <button id="1" >first</button>
+   <button id="2">second</button>
+</body>
+  <script>
+   let Currency_1 = document.getElementById("Currency-1");
+   let equity_1 = document.getElementById("equity-1");
+   let ipo_1 = document.getElementById("ipo-1");
+   let btn_currency = document.getElementById("btn_currency");
+   let btn_equity = document.getElementById("btn_equity");
+   let btn_ipo = document.getElementById("btn_ipo");
+   btn_currency.addEventListener('click',()=>{
+      Currency_1.style.display='block';
+      equity_1.style.display='none';
+      ipo_1.style.display='none';
+   });
+
+   btn_equity.addEventListener('click',()=>{
+      Currency_1.style.display='none';
+      equity_1.style.display='block';
+      ipo_1.style.display='none';
+   });
+
+   btn_ipo.addEventListener('click',()=>{
+      Currency_1.style.display='none';
+      equity_1.style.display='none';
+      ipo_1.style.display='block';
+   });
+  </script>
+</html>
